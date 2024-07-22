@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTTP Status Codes Information</title>
+</head>
+<body>
+<h1>HTTP Status Codes Information</h1>
+<div id="statusCodes">
+    <div>
+        <h2>418 I'm a teapot</h2>
+        <p>Numerical Code: 418</p>
+        <p>Purpose: This status code is defined in the Hyper Text Coffee Pot Control Protocol (HTCPCP) as an April Fools' joke. It indicates that the server refuses to brew coffee because it is a teapot.</p>
+        <p>Situation: This status code is not meant for serious use and is typically returned as a joke response.</p>
+    </div>
+    <div>
+        <h2>429 Too Many Requests</h2>
+        <p>Numerical Code: 429</p>
+        <p>Purpose: Indicates that the user has sent too many requests in a given amount of time ("rate limiting").</p>
+        <p>Situation: This status code is returned when a user exceeds the rate limit set by the server, typically seen in API rate limiting scenarios.</p>
+    </div>
+    <div>
+        <h2>451 Unavailable For Legal Reasons</h2>
+        <p>Numerical Code: 451</p>
+        <p>Purpose: Indicates that the server is denying access to the resource as a legal demand.</p>
+        <p>Situation: This status code can be used when a website or resource is blocked due to legal reasons, such as government censorship or legal restrictions.</p>
+    </div>
+    <div>
+        <h2>506 Variant Also Negotiates</h2>
+        <p>Numerical Code: 506</p>
+        <p>Purpose: Indicates that the server has an internal configuration error and cannot complete the request.</p>
+        <p>Situation: This status code is rarely used and might be returned when the server encounters an unexpected configuration issue while processing the request.</p>
+    </div>
+    <div>
+        <h2>508 Loop Detected</h2>
+        <p>Numerical Code: 508</p>
+        <p>Purpose: Indicates that the server detected an infinite loop while processing the request.</p>
+        <p>Situation: This status code can be returned when a server detects that the request is causing an infinite loop in its processing, and it needs to stop to prevent server overload.</p>
+    </div>
+</div>
+</body>
+</html>

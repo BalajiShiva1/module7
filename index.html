@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to module 7</h1>
+    <h1>To-Do List</h1>
+    <ul id="taskList">
+        <li class="task">Buy groceries</li>
+        <li class="task">Clean the house</li>
+        <li class="task">Do laundry</li>
+        <li class="task">Walk the dog</li>
+        <li class="task">Read a book</li>
+    </ul>
+
+    <h1>Login</h1>
+    <form id="cookieForm" action="/set-cookies" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <button id="redirectButton">Go to Status Code Page</button>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            window.location.href = 'codes.html'; 
+        });
+    </script>
+</body>
+</html>
